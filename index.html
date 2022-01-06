@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Site</title>
+</head>
+
+<body>
+
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+            <button id="search" class="search showBTN">Submit</button>
+        </form>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+    </div>
+    <section class="containerDiv">
+        <main id="main" class="reveal-button hideSec pagiShow pagiSee pagiAll"></main>
+        <div id="bigPic" class="hidden-section"></div>
+    </section>
+    <section class="pagination">
+        <div class="page pagiHide" id="prev">Previous Page</div>
+        <div class="current pagiBlock" id="current">1</div>
+        <div class="page pagiHide pagiNone" id="next">Next Page</div>
+    </section>
+    <section class="watch-message">
+        Hey, Get Any Movie Details as per your Search! Enjoy 😉
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
